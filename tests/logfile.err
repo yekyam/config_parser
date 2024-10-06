@@ -1,0 +1,174 @@
+********************test_basic_parser.cpp | g++********************
+********************test_basic_parser.cpp | ./a.out********************
+********************test_option_group.cpp | g++********************
+********************test_option_group.cpp | ./a.out********************
+********************test_basic_parser.cpp | g++********************
+test_basic_parser.cpp:22:28: error: invalid operands to binary expression ('basic_ostream<char, char_traits<char>>' and 'std::optional<std::string>' (aka 'optional<basic_string<char>>'))
+                std::cout << opt << '\t' << opts->get_arg(opt) << '\n';
+                ~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef:125:3: note: candidate function template not viable: no known conversion from 'basic_ostream<char, char_traits<char>>' to 'byte' for 1st argument
+  operator<< (byte  __lhs, _Integer __shift) noexcept
+  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:792:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:825:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:832:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:839:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:853:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:899:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:906:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:914:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1099:1: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1137:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'wchar_t' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1140:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const wchar_t *' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1158:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'char8_t' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1164:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const char8_t *' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1171:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'char16_t' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1174:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'char32_t' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1177:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const char16_t *' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1180:31: note: candidate function template not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const char32_t *' for 2nd argument
+basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:785:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::optional<std::string>' (aka 'optional<basic_string<char>>'))
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:258:1: note: candidate template ignored: could not match 'uniform_int_distribution' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:846:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::optional<std::string>' (aka 'optional<basic_string<char>>')
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1082:1: note: candidate template ignored: could not match 'basic_string' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1090:1: note: candidate template ignored: could not match 'basic_string_view' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1107:1: note: candidate template ignored: could not match 'shared_ptr' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1126:1: note: candidate template ignored: could not match 'bitset' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1074:11: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = std::ostream &, _Tp = std::optional<std::string>]
+_Stream&& operator<<(_Stream&& __os, const _Tp& __x)
+          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1119:1: note: candidate template ignored: could not match 'unique_ptr' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1143:34: note: candidate template ignored: could not match 'wchar_t' against 'char'
+basic_ostream<wchar_t, _Traits>& operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1146:34: note: candidate template ignored: could not match 'wchar_t' against 'char'
+basic_ostream<wchar_t, _Traits>& operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1149:34: note: candidate template ignored: could not match 'wchar_t' against 'char'
+basic_ostream<wchar_t, _Traits>& operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1152:34: note: candidate template ignored: could not match 'wchar_t' against 'char'
+basic_ostream<wchar_t, _Traits>& operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1161:34: note: candidate template ignored: could not match 'wchar_t' against 'char'
+basic_ostream<wchar_t, _Traits>& operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1167:34: note: candidate template ignored: could not match 'wchar_t' against 'char'
+basic_ostream<wchar_t, _Traits>& operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:362:1: note: candidate template ignored: could not match '__iom_t8' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t8<_MoneyT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:482:1: note: candidate template ignored: could not match '__iom_t10' against 'optional'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t10<_CharT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:221:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'ostream &(*)(ostream &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:225:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:230:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'ios_base &(*)(ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:233:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:234:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:235:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:236:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:237:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:238:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:239:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:240:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:241:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:242:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:243:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:244:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:245:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'const void *' for 1st argument
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:254:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char>> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:260:20: note: candidate function not viable: no known conversion from 'std::optional<std::string>' (aka 'optional<basic_string<char>>') to 'nullptr_t' (aka 'std::nullptr_t') for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+1 error generated.
+********************test_option_group.cpp | g++********************
+********************test_option_group.cpp | ./a.out********************
+********************test_basic_parser.cpp | g++********************
+********************test_basic_parser.cpp | ./a.out********************
+********************test_option_group.cpp | g++********************
+********************test_option_group.cpp | ./a.out********************

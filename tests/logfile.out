@@ -1,0 +1,28 @@
+********************test_basic_parser.cpp | g++********************
+********************test_basic_parser.cpp | ./a.out********************
+key3
+key4
+key2
+key1
+********************test_option_group.cpp | g++********************
+********************test_option_group.cpp | ./a.out********************
+	opt2
+	int_opt
+10
+********************test_basic_parser.cpp | g++********************
+********************test_option_group.cpp | g++********************
+********************test_option_group.cpp | ./a.out********************
+	opt2
+	int_opt
+10
+********************test_basic_parser.cpp | g++********************
+********************test_basic_parser.cpp | ./a.out********************
+key3	jeffrey
+key4	dave
+key2	bobby
+key1	sam
+********************test_option_group.cpp | g++********************
+********************test_option_group.cpp | ./a.out********************
+	opt2
+	int_opt
+10
